@@ -92,8 +92,8 @@ Android app built with 100% Jetpack Compose + Material3, with Dynamic Color out 
 
 ### Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=GreenRou&show_icons=true&hide_border=true&bg_color=00000000&title_color=4CAF50&icon_color=81C784&text_color=ffffff&ring_color=2E7D32" width="48%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GreenRou&layout=compact&hide_border=true&bg_color=00000000&title_color=4CAF50&text_color=ffffff" width="40%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=green-rou&show_icons=true&hide_border=true&bg_color=00000000&title_color=4CAF50&icon_color=81C784&text_color=ffffff&ring_color=2E7D32" width="48%"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=green-rou&layout=compact&hide_border=true&bg_color=00000000&title_color=4CAF50&text_color=ffffff" width="40%"/>
 
 </div>
 
