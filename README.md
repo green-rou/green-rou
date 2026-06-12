@@ -102,6 +102,11 @@ Android app built with 100% Jetpack Compose + Material3, with Dynamic Color out 
 ### WakaTime
 
 <!--START_SECTION:waka-->
+
+```txt
+No activity tracked
+```
+
 <!--END_SECTION:waka-->
 
 </div>
