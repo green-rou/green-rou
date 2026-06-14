@@ -104,11 +104,11 @@ Android app built with 100% Jetpack Compose + Material3, with Dynamic Color out 
 <!--START_SECTION:waka-->
 
 ```txt
-Markdown         19 mins               ██████████████▓░░░░░░░░░░   58.21 %
-Kotlin           13 mins               █████████▒░░░░░░░░░░░░░░░   37.85 %
-GitIgnore file   1 min                 █░░░░░░░░░░░░░░░░░░░░░░░░   03.85 %
-XML              0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 %
-Gradle           0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
+Kotlin           3 hrs 35 mins         █████████████████████▓░░░   87.06 %
+Markdown         23 mins               ██▒░░░░░░░░░░░░░░░░░░░░░░   09.32 %
+TOML             7 mins                ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.08 %
+GitIgnore file   1 min                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.54 %
+XML              0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
 ```
 
 <!--END_SECTION:waka-->
