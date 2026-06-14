@@ -65,18 +65,6 @@ Caused by: java.lang.AssertionError:
 
 <div align="center">
 
-### Currently building
-
-**[Rouxen](https://github.com/green-rou/Rouxen)**
-Android app built with 100% Jetpack Compose + Material3, with Dynamic Color out of the box.
-`Kotlin 2.2` `AGP 9` `Compose BOM 2026.02`
-
-</div>
-
-<br>
-
-<div align="center">
-
 ### Palette
 
 <img src="https://img.shields.io/badge/primary-2E7D32?style=for-the-badge&labelColor=1B1B1B"/>
