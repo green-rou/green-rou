@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>denis@greenrou:~$</title>
+  <meta name="description" content="Denys Kramar — Android developer. Kotlin · Jetpack Compose · Material3." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="wave-bar"></div>
+    <div class="hero-content">
+      <div class="terminal-prompt">
+        <span class="prompt-user">denis</span><span class="prompt-at">@</span><span class="prompt-host">greenrou</span><span class="prompt-colon">:</span><span class="prompt-tilde">~</span><span class="prompt-dollar">$</span>
+        <span class="cursor" aria-hidden="true"></span>
+      </div>
+      <p class="hero-subtitle"><span id="typing-text"></span><span class="typing-cursor">|</span></p>
+      <div class="hero-badges">
+        <span class="badge">Android</span>
+        <span class="badge">Kotlin</span>
+        <span class="badge">Jetpack Compose</span>
+      </div>
+      <p class="hero-location"><span class="green">//</span> Rybnik, Poland</p>
+      <a href="#projects" class="scroll-arrow" aria-label="Scroll to projects">
+        <span>↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────────── -->
+  <section id="about" class="fade-in-section">
+    <div class="section-container">
+      <h2 class="section-title"><span class="green">//</span> about</h2>
+      <div class="about-grid">
+
+        <div class="code-block">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green-dot"></span>
+            <span class="code-filename">build.gradle.kts <span class="dim">(me)</span></span>
+          </div>
+          <pre class="code-body"><span class="kw">plugins</span> {
+    id(<span class="str">"human"</span>)
+    id(<span class="str">"android-developer"</span>)
+}
+
+<span class="kw">dependencies</span> {
+    implementation(<span class="str">"kotlin:fluent"</span>)
+    implementation(<span class="str">"jetpack.compose:material3:latest"</span>)
+    implementation(<span class="str">"dynamic-color:enabled-by-default"</span>)
+    implementation(project(<span class="str">":coffee"</span>)) <span class="comment">// required</span>
+
+    testImplementation(<span class="str">"patience:still-loading"</span>)
+    debugImplementation(<span class="str">"logcat:best-friend"</span>)
+}
+
+<span class="kw">android</span> {
+    mood {
+        targetSdk = <span class="str">"motivated"</span>
+        minSdk = <span class="str">"caffeinated"</span>
+    }
+}</pre>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green-dot"></span>
+            <span class="code-filename">logcat</span>
+          </div>
+          <pre class="code-body logcat"><span class="fatal">FATAL EXCEPTION: MainThread</span>
+Process: life.denis, PID: 2026
+java.lang.StackOverflowError
+    at Denis.refactor(Project.kt:1)
+    at Denis.refactor(Project.kt:1)
+    at Denis.refactor(Project.kt:1)
+    ... 247 more
+
+Caused by: java.lang.AssertionError:
+  <span class="str">"it works on my emulator"</span>
+    at Denis.deploy(Prod.kt:42)
+    at Denis.panic(Prod.kt:43)</pre>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ──────────────────────────────────────────────── -->
+  <section id="projects" class="fade-in-section">
+    <div class="section-container">
+      <h2 class="section-title"><span class="green">//</span> projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-prompt">&gt;</span>
+            <span class="project-name">Rouxen</span>
+            <span class="project-status active">● active</span>
+          </div>
+          <p class="project-desc">On-device network &amp; traffic toolkit for Android. WiFi/BLE scan, DNS/SSL/WHOIS/ping, VPN traffic capture, device monitor. No telemetry.</p>
+          <div class="project-stack">
+            <span class="pill">Kotlin</span>
+            <span class="pill">Compose</span>
+            <span class="pill">Material3</span>
+            <span class="pill">Koin</span>
+            <span class="pill">Room</span>
+          </div>
+          <a href="https://github.com/green-rou/Rouxen" target="_blank" rel="noopener" class="gh-link">[ View on GitHub ]</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-prompt">&gt;</span>
+            <span class="project-name">Kanata</span>
+            <span class="project-status released">● v0.3.2</span>
+          </div>
+          <p class="project-desc">Extension-based anime &amp; manga viewer for Android. Loads providers at runtime, no built-in content. Browse thousands of titles with Compose UI.</p>
+          <div class="project-stack">
+            <span class="pill">Kotlin</span>
+            <span class="pill">Compose</span>
+            <span class="pill">Clean Arch</span>
+            <span class="pill">Koin</span>
+            <span class="pill">MIT</span>
+          </div>
+          <a href="https://github.com/green-rou/Kanata" target="_blank" rel="noopener" class="gh-link">[ View on GitHub ]</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-prompt">&gt;</span>
+            <span class="project-name">Rovibe</span>
+          </div>
+          <p class="project-desc">Terminal-style audio synthesizer and sequencer for Android. Write short scripts to synthesize and sequence audio in real time — no samples, no DAW.</p>
+          <div class="project-stack">
+            <span class="pill">Kotlin</span>
+            <span class="pill">AudioTrack</span>
+            <span class="pill">44.1 kHz</span>
+          </div>
+          <a href="https://github.com/green-rou/Rovibe" target="_blank" rel="noopener" class="gh-link">[ View on GitHub ]</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────────── -->
+  <section id="skills" class="fade-in-section">
+    <div class="section-container">
+      <h2 class="section-title"><span class="green">//</span> skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <span class="skill-label">Language</span>
+          <div class="skill-badges">
+            <span class="skill-badge primary">Kotlin</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-label">UI</span>
+          <div class="skill-badges">
+            <span class="skill-badge">Jetpack Compose</span>
+            <span class="skill-badge">Material3</span>
+            <span class="skill-badge">Dynamic Color</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-label">Architecture</span>
+          <div class="skill-badges">
+            <span class="skill-badge">Clean Architecture</span>
+            <span class="skill-badge">Multi-module</span>
+            <span class="skill-badge">MVVM</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-label">DI / DB</span>
+          <div class="skill-badges">
+            <span class="skill-badge">Koin</span>
+            <span class="skill-badge">Hilt</span>
+            <span class="skill-badge">Room</span>
+            <span class="skill-badge">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-label">Network</span>
+          <div class="skill-badges">
+            <span class="skill-badge">OkHttp</span>
+            <span class="skill-badge">Retrofit</span>
+            <span class="skill-badge">dnsjava</span>
+            <span class="skill-badge">WebSockets</span>
+            <span class="skill-badge">WebView</span>
+            <span class="skill-badge">Web Scraping</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-label">Hardware / IoT</span>
+          <div class="skill-badges">
+            <span class="skill-badge">BLE</span>
+            <span class="skill-badge">Arduino</span>
+            <span class="skill-badge">Programmer</span>
+            <span class="skill-badge">Simplicity Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-label">Tools &amp; Platform</span>
+          <div class="skill-badges">
+            <span class="skill-badge">Android Studio</span>
+            <span class="skill-badge">AGP 9</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">GitLab</span>
+            <span class="skill-badge">CI/CD</span>
+            <span class="skill-badge">Figma</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-label">Also explored</span>
+          <div class="skill-badges">
+            <span class="skill-badge dim-badge">Expo</span>
+            <span class="skill-badge dim-badge">Python</span>
+            <span class="skill-badge dim-badge">Reverse Engineering</span>
+            <span class="skill-badge dim-badge">Web</span>
+            <span class="skill-badge dim-badge">Game Dev</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Palette row, mirrors README -->
+      <div class="palette-row">
+        <span class="palette-chip" style="background:#2E7D32">primary</span>
+        <span class="palette-chip" style="background:#4CAF50">secondary</span>
+        <span class="palette-chip" style="background:#81C784">tertiary</span>
+        <span class="palette-chip" style="background:#2C2C2C;border:1px solid #333">surface</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <span class="footer-prompt">denis@greenrou:~$ <span class="green">git log --oneline</span></span>
+      <div class="footer-links">
+        <a href="mailto:denis.kramar15@gmail.com" class="footer-link">denis.kramar15@gmail.com</a>
+        <a href="https://github.com/green-rou" target="_blank" rel="noopener" class="footer-link">github.com/green-rou</a>
+      </div>
+      <p class="footer-location">Rybnik, Poland</p>
+      <p class="footer-copy">© 2026 green-rou</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
