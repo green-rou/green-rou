@@ -92,9 +92,9 @@ Caused by: java.lang.AssertionError:
 <!--START_SECTION:waka-->
 
 ```txt
-Kotlin     0 secs                ████████████████░░░░░░░░░   64.47 %
-XML        0 secs                ██████▒░░░░░░░░░░░░░░░░░░   25.66 %
-Markdown   0 secs                ██▒░░░░░░░░░░░░░░░░░░░░░░   09.87 %
+Markdown   4 mins                █████████████████▓░░░░░░░   71.33 %
+Kotlin     1 min                 ███████░░░░░░░░░░░░░░░░░░   27.72 %
+XML        0 secs                ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.94 %
 ```
 
 <!--END_SECTION:waka-->
