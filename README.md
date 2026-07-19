@@ -92,11 +92,7 @@ Caused by: java.lang.AssertionError:
 <!--START_SECTION:waka-->
 
 ```txt
-Kotlin           3 mins                ██████████▒░░░░░░░░░░░░░░   41.58 %
-GitIgnore file   2 mins                ███████▒░░░░░░░░░░░░░░░░░   29.27 %
-Other            2 mins                ███████▒░░░░░░░░░░░░░░░░░   28.88 %
-XML              0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.13 %
-Properties       0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.08 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
