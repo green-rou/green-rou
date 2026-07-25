@@ -5,12 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>denis@greenrou:~$</title>
   <meta name="description" content="Denys Kramar — Android developer. Kotlin · Jetpack Compose · Material3." />
+  <meta name="theme-color" content="#1B1B1B" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://green-rou.github.io/green-rou/" />
+  <meta property="og:title" content="denis@greenrou:~$" />
+  <meta property="og:description" content="Denys Kramar — Android developer. Kotlin · Jetpack Compose · Material3." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="denis@greenrou:~$" />
+  <meta name="twitter:description" content="Denys Kramar — Android developer. Kotlin · Jetpack Compose · Material3." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Denys Kramar",
+    "jobTitle": "Android Developer",
+    "url": "https://green-rou.github.io/green-rou/",
+    "sameAs": ["https://github.com/green-rou"]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <canvas class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <!-- ── HERO ─────────────────────────────────────────────────── -->
   <section id="hero">
@@ -27,6 +52,21 @@
         <span class="badge">Jetpack Compose</span>
       </div>
       <p class="hero-location"><span class="green">//</span> Rybnik, Poland</p>
+
+      <div class="mini-terminal">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green-dot"></span>
+          <span class="code-filename">guest@greenrou:~$</span>
+        </div>
+        <div class="terminal-body" id="terminal-output" aria-live="polite">
+          <p class="terminal-line dim">type <span class="green">help</span> and press enter_</p>
+        </div>
+        <div class="terminal-input-row">
+          <span class="terminal-prompt-char">$</span>
+          <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input" placeholder="type a command..." />
+        </div>
+      </div>
+
       <a href="#projects" class="scroll-arrow" aria-label="Scroll to projects">
         <span>↓</span>
       </a>
@@ -36,13 +76,14 @@
   <!-- ── ABOUT ─────────────────────────────────────────────────── -->
   <section id="about" class="fade-in-section">
     <div class="section-container">
-      <h2 class="section-title"><span class="green">//</span> about</h2>
+      <h2 class="section-title"><span class="green">//</span> <span class="type-target" data-text="about"></span><span class="type-cursor"></span></h2>
       <div class="about-grid">
 
         <div class="code-block">
           <div class="code-header">
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green-dot"></span>
             <span class="code-filename">build.gradle.kts <span class="dim">(me)</span></span>
+            <button class="copy-btn" type="button">[ copy ]</button>
           </div>
           <pre class="code-body"><span class="kw">plugins</span> {
     id(<span class="str">"human"</span>)
@@ -71,6 +112,7 @@
           <div class="code-header">
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green-dot"></span>
             <span class="code-filename">logcat</span>
+            <button class="copy-btn" type="button">[ copy ]</button>
           </div>
           <pre class="code-body logcat"><span class="fatal">FATAL EXCEPTION: MainThread</span>
 Process: life.denis, PID: 2026
@@ -93,14 +135,19 @@ Caused by: java.lang.AssertionError:
   <!-- ── PROJECTS ──────────────────────────────────────────────── -->
   <section id="projects" class="fade-in-section">
     <div class="section-container">
-      <h2 class="section-title"><span class="green">//</span> projects</h2>
+      <h2 class="section-title"><span class="green">//</span> <span class="type-target" data-text="projects"></span><span class="type-cursor"></span></h2>
       <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-header">
             <span class="project-prompt">&gt;</span>
             <span class="project-name">Rouxen</span>
-            <span class="project-status active">● active</span>
+            <svg class="project-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="10" cy="15" r="1.4" fill="currentColor"/>
+              <path d="M6 11.5a5.6 5.6 0 0 1 8 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M3.3 8.8a9.4 9.4 0 0 1 13.4 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <span class="project-status paused">● paused</span>
           </div>
           <p class="project-desc">On-device network &amp; traffic toolkit for Android. WiFi/BLE scan, DNS/SSL/WHOIS/ping, VPN traffic capture, device monitor. No telemetry.</p>
           <div class="project-stack">
@@ -110,13 +157,17 @@ Caused by: java.lang.AssertionError:
             <span class="pill">Koin</span>
             <span class="pill">Room</span>
           </div>
-          <a href="https://github.com/green-rou/Rouxen" target="_blank" rel="noopener" class="gh-link">[ View on GitHub ]</a>
+          <a href="https://github.com/green-rou/Rouxen" target="_blank" rel="noopener" class="gh-link"><span class="bracket">[</span> View on GitHub <span class="bracket">]</span></a>
         </div>
 
         <div class="project-card">
           <div class="project-header">
             <span class="project-prompt">&gt;</span>
             <span class="project-name">Kanata</span>
+            <svg class="project-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 4.5c0-.6.5-1 1.2-.9 1.6.2 3.4.8 4.8 1.8 1.4-1 3.2-1.6 4.8-1.8.7-.1 1.2.3 1.2.9v10c0 .6-.5 1-1.2.9-1.6-.2-3.4.8-4.8 1.8-1.4-1-3.2-2-4.8-1.8-.7.1-1.2-.3-1.2-.9v-10z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+              <path d="M10 5.4v10" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
             <span class="project-status released">● v0.3.2</span>
           </div>
           <p class="project-desc">Extension-based anime &amp; manga viewer for Android. Loads providers at runtime, no built-in content. Browse thousands of titles with Compose UI.</p>
@@ -127,13 +178,16 @@ Caused by: java.lang.AssertionError:
             <span class="pill">Koin</span>
             <span class="pill">MIT</span>
           </div>
-          <a href="https://github.com/green-rou/Kanata" target="_blank" rel="noopener" class="gh-link">[ View on GitHub ]</a>
+          <a href="https://github.com/green-rou/Kanata" target="_blank" rel="noopener" class="gh-link"><span class="bracket">[</span> View on GitHub <span class="bracket">]</span></a>
         </div>
 
         <div class="project-card">
           <div class="project-header">
             <span class="project-prompt">&gt;</span>
             <span class="project-name">Rovibe</span>
+            <svg class="project-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2.5 10h2l1.5-4 2.5 8 2-11 2.5 9 1.5-2h2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
           <p class="project-desc">Terminal-style audio synthesizer and sequencer for Android. Write short scripts to synthesize and sequence audio in real time — no samples, no DAW.</p>
           <div class="project-stack">
@@ -141,7 +195,7 @@ Caused by: java.lang.AssertionError:
             <span class="pill">AudioTrack</span>
             <span class="pill">44.1 kHz</span>
           </div>
-          <a href="https://github.com/green-rou/Rovibe" target="_blank" rel="noopener" class="gh-link">[ View on GitHub ]</a>
+          <a href="https://github.com/green-rou/Rovibe" target="_blank" rel="noopener" class="gh-link"><span class="bracket">[</span> View on GitHub <span class="bracket">]</span></a>
         </div>
 
       </div>
@@ -151,7 +205,7 @@ Caused by: java.lang.AssertionError:
   <!-- ── SKILLS ─────────────────────────────────────────────────── -->
   <section id="skills" class="fade-in-section">
     <div class="section-container">
-      <h2 class="section-title"><span class="green">//</span> skills</h2>
+      <h2 class="section-title"><span class="green">//</span> <span class="type-target" data-text="skills"></span><span class="type-cursor"></span></h2>
       <div class="skills-grid">
 
         <div class="skill-group">

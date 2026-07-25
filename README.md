@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1B5E20,100:81C784&height=180&section=header&text=denis@greenrou:~$&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=Android%20%E2%80%A2%20Kotlin%20%E2%80%A2%20Jetpack%20Compose&descAlignY=62&descSize=16&animation=fadeIn" width="100%"/>
 
 <a href="#">
-  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=20&duration=3000&pause=800&color=4CAF50&center=true&vCenter=true&width=520&lines=MaterialTheme.colorScheme+enjoyer;Dynamic+Color%2C+always+on;Compose+Preview+!%3D+Real+Device;Currently+building+Rouxen;Coffee-driven+development" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=20&duration=3000&pause=800&color=4CAF50&center=true&vCenter=true&width=520&lines=MaterialTheme.colorScheme+enjoyer;Dynamic+Color%2C+always+on;Compose+Preview+!%3D+Real+Device;Coffee-driven+development" alt="Typing SVG" />
 </a>
 
 </div>
